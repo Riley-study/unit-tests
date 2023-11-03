@@ -51,5 +51,9 @@ public class CalculatorTest {
 
         System.out.println(Calculator.calculation(2_147_483_647, 1, '+')); // integer overflow
         System.out.println(Calculator.squareRootExtraction(169));
+        
+        // Проверка calculatingDiscount, с использованием утверждений AssertJ:
+        assertThat(Calculator.calculatingDiscount(100,50)).isEqualTo(50);
+        assertThat(Calculator.calculatingDiscount(100,120)).isEqualTo(0);  // выкидывает исключение
     }
 }
