@@ -18,13 +18,15 @@ public class Shop {
      * @return отсортированный по возрастанию и цене список продуктов
      */
     public List<Product> getSortedListProducts() {
-        return null;
+        products.sort(Comparator.comparingInt(Product::getCost));
+        return products;
     }
 
     /**
      * @return самый дорогой продукт
      */
     public Product getMostExpensiveProduct() {
-        return null;
+        getSortedListProducts();
+        return products.get(products.size()-1);
     }
 }
