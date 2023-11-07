@@ -33,8 +33,8 @@ public class Main {
 //        testingJavaCollectionsAssertJ(colors);
 ////
 //        List<String> heroBag = Arrays.asList("Bow", "Axe", "Gold");
-        Hero emmett = new Hero("Emmett", 50, "sword", heroBag, true);
-        checkingHero(emmett);
+//        Hero emmett = new Hero("Emmett", 50, "sword", heroBag, true);
+//        checkingHero(emmett);
     }
 
     /**

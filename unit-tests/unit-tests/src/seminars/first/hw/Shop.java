@@ -1,5 +1,6 @@
 package seminars.first.hw;
 
+import java.util.Comparator;
 import java.util.List;
 
 public class Shop {

@@ -1,5 +1,11 @@
 package seminars.first.hw;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
+
 public class ShopTest {
 
     public static void main(String[] args) {
