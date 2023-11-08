@@ -229,16 +229,16 @@ public class ShopTest {
     /**
      * 2.9. Нужно восстановить тест
      */
-    // boolean Сломанный-Тест() {
-    //          // Assert (Проверка утверждения)
-    //          assertThat(cart.getTotalPrice()).isEqualTo(cart.getTotalPrice());
-    //          // Act (Выполнение)
-    //          cart.addProductToCartByID(2); // 250
-    //          cart.addProductToCartByID(2); // 250
-    //          // Arrange (Подготовка)
-    //          Shop shop = new Shop(getStoreItems());
-    //          Cart cart = new Cart(shop);
-    //      }
+    @Test
+     void testFixed() {
+        // Act (Выполнение)
+        cart.addProductToCartByID(2); // 250
+        cart.addProductToCartByID(2); // 250
+        // Assert (Проверка утверждения)
+        assertThat(cart.getTotalPrice()).isEqualTo(500);
+        // Arrange (Подготовка)
+
+          }
     @Test
     void testSUM() {
         // Arrange
@@ -262,7 +262,7 @@ public class ShopTest {
     @Disabled
     @DisplayName("Advanced test for calculating TotalPrice")
     @RepeatedTest(10)
-    @Timeout(value = 70, unit = TimeUnit.MILLISECONDS)
+    @Timeout(value = 232, unit = TimeUnit.MILLISECONDS)
     void advancedTestForCalculatingTotalPrice() {
         // Arrange
         // @BeforeEach
