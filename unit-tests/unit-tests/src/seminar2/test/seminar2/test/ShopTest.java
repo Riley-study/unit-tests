@@ -188,7 +188,8 @@ public class ShopTest {
             cart.removeProductByID(1);
         }
         // Assert
-        assertEquals(startShopQty - movedToCartQty + movedFromCartQty, shop.getProductsShop().get(0).getQuantity());
+        assertEquals(startShopQty - movedToCartQty + movedFromCartQty, shop.getProductsShop().
+                get(0).getQuantity());
     }
 
     /**
