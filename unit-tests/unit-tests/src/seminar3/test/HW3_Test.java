@@ -19,4 +19,10 @@ public class HW3_Test {
         assertTrue(mainTest.evenOddNumber(12));
         assertFalse(mainTest.evenOddNumber(11));
     }
+
+    @Test
+    void numberInIntervalTest() {
+        assertTrue(mainTest.numberInInterval(50));
+        assertFalse(mainTest.numberInInterval(110));
+    }
 }
