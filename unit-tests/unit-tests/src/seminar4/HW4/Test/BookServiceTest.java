@@ -1,4 +1,4 @@
-package Book;
+package seminar4.HW4.Test;
 
 import org.junit.jupiter.api.Test;
 
