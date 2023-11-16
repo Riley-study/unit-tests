@@ -1,5 +1,3 @@
-package seminar4.HW4.Test;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import seminar4.HW4.Book.Book;
